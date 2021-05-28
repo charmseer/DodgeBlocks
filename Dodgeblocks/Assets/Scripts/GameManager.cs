@@ -4,8 +4,8 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public float slowdownFactor = 0.05f;
-    public float slowdaownLength = 2f;
+    //public float slowdownFactor = 0.05f;
+    //public float slowdaownLength = 2f;
     public void EndGame()
     {
         Debug.Log("End Game");

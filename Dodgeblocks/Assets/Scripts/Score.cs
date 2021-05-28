@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Score : MonoBehaviour
 {
     public Text scoreValue;
+    public Text scoreValue2;
 
     public int counter;
 
@@ -20,5 +21,6 @@ public class Score : MonoBehaviour
         Debug.Log("Col lided with ScoreBase");
 
         scoreValue.text = (counter / 4).ToString();
+        scoreValue2.text = (counter / 4).ToString();
     }
 }
