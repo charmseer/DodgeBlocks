@@ -16,7 +16,7 @@ public class PlayerControls : MonoBehaviour
     }
     void FixedUpdate()
     {
-        float x = Input.GetAxis("Horizontal")* Time.fixedDeltaTime * speed;
+        float x = Input.GetAxis("Horizontal") * Time.fixedDeltaTime * speed;
 
         Vector2 newPosition = rb.position + Vector2.right * x;
 
@@ -28,13 +28,7 @@ public class PlayerControls : MonoBehaviour
         // x is the float that is received from user. So we have Direction and magnitude
         //to make the rigidbody move
         rb.MovePosition(newPosition);
-        
+
     }
 
-    void OnCollisionEnter2D()
-    {
-        Debug.Log("We've been hit!");
-        
-        FindObjectOfType<GameManager>().EndGame();
-    }
 }
