@@ -12,6 +12,7 @@ public class PlayerControls : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
 
+        Debug.Log("Game Begins");
     }
     void FixedUpdate()
     {
@@ -28,5 +29,12 @@ public class PlayerControls : MonoBehaviour
         //to make the rigidbody move
         rb.MovePosition(newPosition);
         
+    }
+
+    void OnCollisionEnter2D()
+    {
+        Debug.Log("We've been hit!");
+        
+        FindObjectOfType<GameManager>().EndGame();
     }
 }

@@ -10,7 +10,7 @@ public class BlockSpawner : MonoBehaviour
 
     private float timeToSpawn = 2f;
 
-    public float timeBtwWaves = 1f;
+    public float timeBtwWaves = 2f;
     // Start is called before the first frame update
     void Update()
     {
@@ -39,4 +39,6 @@ public class BlockSpawner : MonoBehaviour
         }
         
     }
+
+    
 }
