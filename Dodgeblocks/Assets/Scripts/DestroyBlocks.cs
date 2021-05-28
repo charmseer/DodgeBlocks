@@ -14,9 +14,13 @@ public class DestroyBlocks : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.y < -1.5)
-        {
+        
+    }
+
+    void OnCollisionEnter2D()
+    {
+        
             Destroy(gameObject);
-        }
+        
     }
 }

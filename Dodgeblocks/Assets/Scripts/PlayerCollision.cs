@@ -7,6 +7,7 @@ public class PlayerCollision : MonoBehaviour
 {
     public PlayerControls movement;
     public GameObject gameOverPanel;
+
     void OnCollisionEnter2D()
     {
         Debug.Log("We've been hit!");
