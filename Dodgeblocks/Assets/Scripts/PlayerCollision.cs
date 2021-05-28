@@ -7,6 +7,7 @@ public class PlayerCollision : MonoBehaviour
 {
     public PlayerControls movement;
     public GameObject gameOverPanel;
+    public GameObject blockSpawner;
 
 
     void OnCollisionEnter2D()
@@ -20,8 +21,9 @@ public class PlayerCollision : MonoBehaviour
 
         gameOverPanel.SetActive(true);
 
+        blockSpawner.SetActive(false);
 
-        FindObjectOfType<GameManager>().EndGame();
+        //FindObjectOfType<GameManager>().EndGame();
     }
 
 }
